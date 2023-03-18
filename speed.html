@@ -7,8 +7,24 @@
     <a href="index.html">HOME PAGE</a>
     <script> type="/javascript" src="speed.js" </script>
     <title>Document</title>
+    <script 
 </head>
 <body>
-    
+    <input id="carSpeed"/>
+    <button onclick="speed()">speed</button>
+    <h3 id="pointsDisplay"></h3>
+    <script>
+       const carSpeed=document.getElementById(
+            'carSpeed'
+        );
+        const speedingPointsDisplay=document.getElementById(
+            'speedingPointsDisplay'
+        )
+        function convert(){
+            const numeric=parseInt(speedingPoints.value)
+     speedingPointsDisplay.innerText=`Your speedingPoints is ${speedingPoints}`;
+  }
+
+    </script>
 </body>
 </html>

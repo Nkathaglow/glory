@@ -2,3 +2,6 @@
     align-items: center;
     display: inline inline-block;
 }
+body{
+    background: purple;
+}

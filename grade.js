@@ -8,7 +8,7 @@ else if(score >= 60 && score < 80) {
 }//if not it does this instead
 else if(score >= 49 && score < 60) {
     console.log("C");
-}//if it still doesn't it should output this 
+}//if it sti
 else if(score >= 40 && score < 50) {
     console.log("D");
 }//it still doesn't this should be done instead
