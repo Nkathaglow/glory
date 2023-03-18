@@ -5,3 +5,19 @@
 body{
     background: purple;
 }
+h1{
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+    text-decoration: solid;
+    text-transform: capitalize;
+    text-decoration-color: gold;
+
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    
+}

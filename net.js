@@ -24,6 +24,6 @@ function calcSalary(personalRelief, netSalary,totalDeductions, contribitionBenef
             break;  
         }
     // This should give us the net salary
-    netSalary = (parseInt (taxableIncome - paye));
+    netS
     console.log(`your netSalary is ksh: ${netSalary}`)
     }

@@ -22,22 +22,23 @@
             'gradeDisplay'
         )
         function convert(){
+            //if the score is inputted it should give an integer
             const numeric=parseInt(numericGrade.value);
             let grade;
-            if(numeric>=80){
+            if(numeric >79 && numeric <= 100){
                 grade='A'
-            }
-            else if (numeric>=60){
+            }//if the score fulfills this it should move to the next one
+            else if (numeric >=60 && numeric <80) {
                 grade='B'
-            }
-            else if(numeric>=50){
+            }//if it doesn't it should fulfill this intead
+            else if(numeric >=49 && numeric <60) {
                 grade='c'
-            }
-            else if(numeric>=40){
+            }//else it should display this
+            else if(numeric >= 40 && numeric <50) {
                 grade='D'
-            }
-            else{grade='E'
-            }
+            }//if not this should be displayed
+            else if (numeric >=0 && numeric <40) {grade='E'
+            }//if not this should be displayed
             console.log(grade)
             gradeDisplay.innerText=`Your score is ${grade}`;
         }
