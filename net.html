@@ -9,11 +9,11 @@
 </head>
 <body>
     <input id="netSalary"/>
-    <input id="beneficts"/>
+    <input id="benefits"/>
     <button onclick="basicsalary()">netSalary</button>
     <h3 id="NetDisplay"></h3>
     <script>
-        // Gives a constant basic salary
+    // Gives a constant basic salary plus the deduction rates
 const BASIC_SALARY = 20000;
 const TAX_RATE = 0.3;
 const NHIF_RATE = 0.25;
@@ -29,13 +29,13 @@ const nhifDeduction = grossSalary * NHIF_RATE;
 const nssfDeduction = grossSalary * NSSF_RATE;
 // Calculate net salary
 const netSalary = grossSalary - taxDeduction - nhifDeduction - nssfDeduction;
-// Display results
+// Output of te results
 console.log(`Gross salary: ${grossSalary.toFixed(2)}`);
 console.log(`Tax deduction: ${taxDeduction.toFixed(2)}`);
 console.log(`NHIF deduction: ${nhifDeduction.toFixed(2)}`);
 console.log(`NSSF deduction: ${nssfDeduction.toFixed(2)}`);
 console.log(`Net salary: ${netSalary.toFixed(2)}`);
-
+//this is the last output
 console.log(netSalary)
 NetDisplay.innerText=`Your salary is ${netSalary}`;
     </script>
